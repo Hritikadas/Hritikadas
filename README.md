@@ -15,7 +15,7 @@
 
 ### 💌 About Me
 
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueXZueXJueXJueXJueXJueXJueXJueXJueXJueXJueXJueCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif" align="right" width="320" style="border-radius: 20px;" />
+<img src="YOUR_IMAGE_URL_HERE" align="right" width="380" style="border-radius: 15px; margin-left: 20px;" />
 
 * 🩰 **Currently:** Crafting seamless experiences with **Next.js 14** & ✨aesthetic✨ UI.
 * 🧠 **Learning:** Diving deep into the world of **Generative AI** and **LLMs**.
@@ -28,6 +28,10 @@
   <a href="https://linkedin.com/in/HritikaDas"><img src="https://img.shields.io/badge/LinkedIn-89b4fa?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="https://github.com/Hritikadas"><img src="https://img.shields.io/badge/GitHub-181825?style=for-the-badge&logo=github&logoColor=white" /></a>
 </p>
+
+<br clear="right"/> 
+
+---
 
 ---
 ### 📊 My GitHub Performance
