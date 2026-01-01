@@ -13,12 +13,12 @@
 
 ### 💌 About Me
 
-<img src="https://raw.githubusercontent.com/Hritikadas/Hritikadas/main/assets/girly_tech_pfp.png" align="right" width="380" style="border-radius: 20px; margin-left: 20px; margin-bottom: 20px;" />
+<img src="https://github.com/Hritikadas/Hritikadas/blob/main/YOUR_IMAGE_NAME.png?raw=true" align="right" width="400" style="border-radius: 20px; margin-left: 20px; margin-bottom: 20px;" />
 
 * 🩰 **Currently:** Crafting seamless experiences with **Next.js 14** & ✨aesthetic✨ UI.
 * 🧠 **Learning:** Diving deep into the world of **Generative AI** and **LLMs**.
 * 🎨 **Obsessed with:** The intersection of **3D simulations** and fintech.
-* 👯 **Open to:** Collabs on **NLP** research or cute Open Source projects.
+* 🤝 **Open to:** Collabs on **NLP** research or cute Open Source projects.
 * 🍵 **Ask me about:** Why I love building **Bag of Words** modules from scratch!
 
 <p align="left">
