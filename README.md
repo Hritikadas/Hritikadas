@@ -1,58 +1,73 @@
-# Hi there, I'm Hritika Das! 👋 
-### Full-Stack Developer | Aspiring AI & Machine Learning Engineer
+# 💫 Hey Everyone, I'm Hritika Das
+### 🚀 Full-Stack Developer | Aspiring AI & Machine Learning Engineer
 
-I am a Computer Engineering student passionate about building scalable web applications and exploring the frontier of Generative AI. I bridge the gap between robust backend logic and intelligent, data-driven insights.
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Welcome%20to%20My%20GitHub%20Universe!&fontSize=40&animation=fadeIn" width="100%"/>
+</p>
 
----
-
-### ⚡ Quick Overview
-- 🎓 *Education:* Pursuing Computer Engineering at Lokamanya Tilak College Of Engineering (CGPA: 7.50)
-- 🚀 *Focus:* Full-Stack Development (Next.js/Node.js) & Agentic AI
-- 🧠 *Learning:* Advanced Deep Learning and Large Language Model (LLM) orchestration
-- 💼 *Open to:* Collaborative Open Source projects and Internship opportunities
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=Hritikadas&label=Profile%20Views&color=0e75b6&style=flat" alt="Views" />
+</div>
 
 ---
 
-### 🛠 Tech Stack
+### 💻 About Me
 
-| Category | Tools & Languages |
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueXZueXJueXJueXJueXJueXJueXJueXJueXJueXJueXJueCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif" align="right" width="350" />
+
+* 🔭 **I’m currently working on** building scalable full-stack applications with **Next.js 14**.
+* 🧠 **Focused on** mastering **Gen AI** and **Machine Learning** concepts.
+* 🛠️ **Enjoy working on** innovative fintech platforms and interactive **3D simulations**.
+* 👯 **Open to collaboration** on Open Source AI/ML projects and **NLP** research.
+* 💬 **Ask me about** building custom **Bag of Words** modules from scratch.
+
+<p align="left">
+  <a href="mailto:hritikadas14@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /></a>
+  <a href="https://linkedin.com/in/HritikaDas"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://github.com/Hritikadas"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+</p>
+
+---
+
+### 📊 My GitHub Performance
+
+<p align="center">
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=Hritikadas&show_icons=true&theme=radical&hide_border=true" />
+  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=Hritikadas&theme=radical&hide_border=true" />
+</p>
+
+<p align="center">
+  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hritikadas&layout=compact&theme=radical&hide_border=true" />
+  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Hritikadas&theme=radical" />
+</p>
+
+---
+
+### 🛠️ Tech Stack & Skills
+
+| Category | Tools & Technologies |
 | :--- | :--- |
-| *Languages* | ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) ![Java](https://img.shields.io/badge/-Java-ED8B00?logo=java&logoColor=white) ![C++](https://img.shields.io/badge/-C%2B%2B-00599C?logo=c%2B%2B&logoColor=white) |
-| *Full-Stack* | ![Next.js](https://img.shields.io/badge/-Next.js-000000?logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black) ![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white) ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?logo=mongodb&logoColor=white) ![Tailwind](https://img.shields.io/badge/-TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white) |
-| *AI/ML* | ![LangChain](https://img.shields.io/badge/-LangChain-121212?logo=chainlink&logoColor=white) ![OpenAI](https://img.shields.io/badge/-OpenAI-412991?logo=openai&logoColor=white) ![Scikit-Learn](https://img.shields.io/badge/-Scikit--Learn-F7931E?logo=scikitlearn&logoColor=white) |
-| *Tools/Cloud* | ![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white) ![Vercel](https://img.shields.io/badge/-Vercel-000000?logo=vercel&logoColor=white) ![Postman](https://img.shields.io/badge/-Postman-FF6C37?logo=postman&logoColor=white) |
+| **Languages** | JavaScript, TypeScript, Python, Java, C++, SQL |
+| **Full-Stack** | Next.js, React, Node.js, Express, MongoDB, Tailwind CSS |
+| **AI & ML** | GenAI (OpenAI APIs, LangChain), TensorFlow.js, Scikit-learn, NumPy |
+| **Cloud & DevOps** | Git/GitHub, Vercel, Render, REST APIs, Postman |
+| **Fundamentals** | DSA, OOP, Agile Methodologies, p5.js |
 
 ---
 
-### 📊 GitHub Stats
-![Hritika's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Hritikadas&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Hritikadas&layout=compact&theme=radical)
+### 🧪 Highlighted Experiments
+
+* 💰 **FinGrow:** AI-Powered Micro-Investment Platform featuring **6 AI engines** for liquidity prediction and spending categorization.
+* 🤟 **SignConnect:** Real-time Sign Language Interpreter using **MediaPipe/TensorFlow.js** for live gesture recognition.
+* 🎬 **Sentiment Classifier:** Developed a multi-class classifier from scratch using **Softmax Regression** and custom N-Gram extraction.
 
 ---
-
 
 ### 🏆 Certifications
-- *IBM* - Agentic AI Program
-- *Google/Hac2Skill* - Gemini Hac2Skill Program
-- *Edunate* - AI/ML Specialization
+* **IBM** – Agentic AI Program
+* **Gemini** – Hac2Skill Program
+* **Edunate** – AI/ML
 
----
-
-### 🤝 Connect with Me
-- 📧 [hritikadas14@gmail.com](mailto:hritikadas14@gmail.com)
-- 💼 [LinkedIn](https://www.linkedin.com/in/hritika-das-459a32360/)
-
-<!--
-**Hritikadas/Hritikadas** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=120&section=footer" width="100%"/>
+</p>
