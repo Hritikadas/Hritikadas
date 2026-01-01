@@ -1,7 +1,5 @@
 # ☁️✨ Hey Everyone, I'm Hritika Das
-### ### 🚀 Full-Stack Developer | Aspiring AI & Machine Learning Engineer
-
-
+### 🎀 Full-Stack Developer | Aspiring AI & Machine Learning Engineer
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=b4befe&height=200&section=header&text=Welcome%20to%20my%20digital%20garden%20🌙&fontSize=40&animation=fadeIn&fontAlignY=35" width="100%"/>
@@ -15,12 +13,12 @@
 
 ### 💌 About Me
 
-<img src="YOUR_IMAGE_URL_HERE" align="right" width="380" style="border-radius: 15px; margin-left: 20px;" />
+<img src="https://raw.githubusercontent.com/Hritikadas/Hritikadas/main/assets/girly_tech_pfp.png" align="right" width="380" style="border-radius: 20px; margin-left: 20px; margin-bottom: 20px;" />
 
 * 🩰 **Currently:** Crafting seamless experiences with **Next.js 14** & ✨aesthetic✨ UI.
 * 🧠 **Learning:** Diving deep into the world of **Generative AI** and **LLMs**.
 * 🎨 **Obsessed with:** The intersection of **3D simulations** and fintech.
-* 🤝 **Open to:** Collabs on **NLP** research or cute Open Source projects.
+* 👯 **Open to:** Collabs on **NLP** research or cute Open Source projects.
 * 🍵 **Ask me about:** Why I love building **Bag of Words** modules from scratch!
 
 <p align="left">
@@ -33,58 +31,40 @@
 
 ---
 
----
-### 📊 My GitHub Performance
-
-
+### 🌸 My Coding Season
 
 <p align="center">
-
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=Hritikadas&show_icons=true&theme=radical&hide_border=true" />
-
-  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=Hritikadas&theme=radical&hide_border=true" />
-
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=Hritikadas&show_icons=true&theme=catppuccin_frappe&hide_border=true&title_color=f5c2e7&icon_color=f5c2e7&text_color=c6d0f5" />
+  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=Hritikadas&theme=catppuccin_frappe&hide_border=true&ring=f5c2e7&fire=f5c2e7&currStreakLabel=f5c2e7" />
 </p>
 
 <p align="center">
-
-  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hritikadas&layout=compact&theme=radical&hide_border=true" />
-
-  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Hritikadas&theme=radical" />
-
+  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hritikadas&layout=compact&theme=catppuccin_frappe&hide_border=true&title_color=f5c2e7&text_color=c6d0f5" />
+  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Hritikadas&theme=neutral" />
 </p>
-
-
 
 ---
 
-### 🛠️ Tech Stack & Skills
-
-
+### 💻 Tech Palette
 
 | Category | Tools & Technologies |
-
 | :--- | :--- |
-
-| **Languages** | JavaScript, TypeScript, Python, Java, C++, SQL |
-
-| **Full-Stack** | Next.js, React, Node.js, Express, MongoDB, Tailwind CSS |
-
-| **AI & ML** | GenAI (OpenAI APIs, LangChain), TensorFlow.js, Scikit-learn, NumPy |
-
-| **Cloud & DevOps** | Git/GitHub, Vercel, Render, REST APIs, Postman |
-
-| **Fundamentals** | DSA, OOP, Agile Methodologies, p5.js |
-
-### 🧪 Featured Experiments
-
-* 💰 **FinGrow:** AI-Powered Micro-Investment platform. Because financial freedom is cute.
-* 🤟 **SignConnect:** Real-time Sign Language Interpreter using **MediaPipe**.
-* 🎬 **Sentiment Classifier:** A custom multi-class classifier built with **Softmax Regression**.
+| **Languages** | `JavaScript` `TypeScript` `Python` `Java` `C++` `SQL` |
+| **Full-Stack** | `Next.js` `React` `Node.js` `Express` `MongoDB` `Tailwind CSS` |
+| **AI & ML** | `GenAI` `LangChain` `TensorFlow.js` `Scikit-learn` `NumPy` |
+| **Fundamentals** | `DSA` `OOP` `Agile` `p5.js` `Postman` |
 
 ---
 
-### 🏆 Achievements
+### 🧪 Highlighted Experiments
+
+* 💰 **FinGrow:** AI-Powered Micro-Investment platform featuring 6 AI engines for liquidity prediction.
+* 🤟 **SignConnect:** Real-time Sign Language Interpreter using **MediaPipe** and **TensorFlow.js**.
+* 🎬 **Sentiment Classifier:** Multi-class classifier built from scratch with **Softmax Regression**.
+
+---
+
+### 🏆 Certifications
 * 🎓 **IBM** – Agentic AI Program
 * 💎 **Gemini** – Hac2Skill Program
 * 🤖 **Edunate** – AI/ML Certification
