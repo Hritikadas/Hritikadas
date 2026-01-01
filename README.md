@@ -1,4 +1,4 @@
-# ☁️✨ Hritika Das
+# ☁️✨ Hey Everyone, I'm Hritika Das
 ### ### 🚀 Full-Stack Developer | Aspiring AI & Machine Learning Engineer
 
 
@@ -30,26 +30,47 @@
 </p>
 
 ---
+### 📊 My GitHub Performance
 
-### 💻 Tech Palette
 
-| Category | Tools |
-| :--- | :--- |
-| **Languages** | `TypeScript` `Python` `Java` `C++` `SQL` |
-| **Frontend** | `Next.js` `React` `Tailwind CSS` `p5.js` |
-| **Backend** | `Node.js` `Express` `MongoDB` `Postman` |
-| **AI/ML** | `LangChain` `OpenAI` `TensorFlow.js` `Scikit-learn` |
-
----
-
-### 🌸 My Coding Season
 
 <p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=Hritikadas&show_icons=true&theme=catppuccin_frappe&hide_border=true&title_color=f5c2e7&icon_color=f5c2e7&text_color=c6d0f5" />
-  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=Hritikadas&theme=catppuccin_frappe&hide_border=true&ring=f5c2e7&fire=f5c2e7&currStreakLabel=f5c2e7" />
+
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=Hritikadas&show_icons=true&theme=radical&hide_border=true" />
+
+  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=Hritikadas&theme=radical&hide_border=true" />
+
 </p>
 
+<p align="center">
+
+  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hritikadas&layout=compact&theme=radical&hide_border=true" />
+
+  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Hritikadas&theme=radical" />
+
+</p>
+
+
+
 ---
+
+### 🛠️ Tech Stack & Skills
+
+
+
+| Category | Tools & Technologies |
+
+| :--- | :--- |
+
+| **Languages** | JavaScript, TypeScript, Python, Java, C++, SQL |
+
+| **Full-Stack** | Next.js, React, Node.js, Express, MongoDB, Tailwind CSS |
+
+| **AI & ML** | GenAI (OpenAI APIs, LangChain), TensorFlow.js, Scikit-learn, NumPy |
+
+| **Cloud & DevOps** | Git/GitHub, Vercel, Render, REST APIs, Postman |
+
+| **Fundamentals** | DSA, OOP, Agile Methodologies, p5.js |
 
 ### 🧪 Featured Experiments
 
