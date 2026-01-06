@@ -37,7 +37,7 @@
 
 ---
 
-### 📄 Professional Resume
+### 📄 Resume
 > **Looking for a technical partner or a dedicated developer? Check out my full credentials below.**
 
 <p align="left">
