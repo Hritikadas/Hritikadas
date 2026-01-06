@@ -40,14 +40,8 @@
 ### 📄 Resume
 > **Looking for a technical partner or a dedicated developer? Check out my full credentials below.**
 
-<p align="left">
-  <a href="file:///C:/Users/HRITIKA%20DAS/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/9FDA100EEBAF8DFD86FCDEA2F70E633D14EE3774/transfers/2026-01/Resume.pdf">
-    <img src="https://img.shields.io/badge/View_Professional_Resume-f5c2e7?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" height="40" />
-  </a>
-  <a href="file:///C:/Users/HRITIKA%20DAS/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/9FDA100EEBAF8DFD86FCDEA2F70E633D14EE3774/transfers/2026-01/Resume.pdf">
-    <img src="https://img.shields.io/badge/Download_PDF-89b4fa?style=for-the-badge&logo=cv&logoColor=white" height="40" />
-  </a>
-</p>
+
+<p align="left"> <a href="https://github.com/Hritikadas/Hritikadas/blob/main/Resume.pdf" target="_blank"> <img src="https://img.shields.io/badge/View_Professional_Resume-f5c2e7?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" height="40" /> </a> <a href="https://raw.githubusercontent.com/Hritikadas/Hritikadas/main/Resume.pdf" download> <img src="https://img.shields.io/badge/Download_PDF-89b4fa?style=for-the-badge&logo=cv&logoColor=white" height="40" /> </a> </p>
 
 ---
 
