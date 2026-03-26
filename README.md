@@ -56,18 +56,6 @@
 
 ---
 
-### 🧪 Highlighted Experiments
-
-* 💰 **FinGrow:** AI-Powered Micro-Investment platform featuring 6 AI engines for liquidity prediction.
-* 🤟 **SignConnect:** Real-time Sign Language Interpreter using **MediaPipe** and **TensorFlow.js**.
-* 🎬 **Sentiment Classifier:** Multi-class classifier built from scratch with **Softmax Regression**.
-
----
-
-### 🏆 Certifications
-* 🎓 **IBM** – Agentic AI Program
-* 💎 **Gemini** – Hac2Skill Program
-* 🤖 **Edunate** – AI/ML Certification
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=b4befe&height=120&section=footer" width="100%"/>
