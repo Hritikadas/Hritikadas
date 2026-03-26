@@ -54,7 +54,7 @@
 | **AI & ML** | `GenAI` `LangChain` `TensorFlow.js` `Scikit-learn` `NumPy` |
 | **Fundamentals** | `DSA` `OOP` `Agile` `p5.js` `Postman` |
 
----
+
 
 
 <p align="center">
