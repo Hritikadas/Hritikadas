@@ -2,24 +2,12 @@
 ### 🎀 Full-Stack Developer | Aspiring AI & Machine Learning Engineer
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=b4befe&height=200&section=header&text=Ctrl%20%2B%20Z%20Doesn't%20work%20in%20real%20life&fontSize=40&animation=fadeIn&fontAlignY=35" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=b4befe&height=200&section=header&text=Ctrl%2BZ%20Doesn't%20work%20in%20real%20life%20!!!&fontSize=38&animation=fadeIn&fontAlignY=35" width="100%"/>
 </p>
 
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=Hritikadas&label=visitor%20count&color=f5c2e7&style=flat-square" alt="Views" />
 </div>
-
----
-
-### 💌 About Me
-
-<img src="https://github.com/Hritikadas/Hritikadas/blob/main/YOUR_IMAGE_NAME.png?raw=true" align="right" width="400" style="border-radius: 20px; margin-left: 20px; margin-bottom: 20px;" />
-
-* **Currently:** Crafting seamless experiences with **Next.js 14** & ✨aesthetic✨ UI.
-* 🧠 **Learning:** Diving deep into the world of **Generative AI** and **LLMs**.
-* 🎨 **Obsessed with:** The intersection of **3D simulations** and fintech.
-* 🤝 **Open to:** Collabs on **NLP** research or cute Open Source projects.
-* 🍵 **Ask me about:** Why I love building **Bag of Words** modules from scratch!
 
 ---
 
