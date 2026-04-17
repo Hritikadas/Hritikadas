@@ -2,7 +2,7 @@
 ### 🎀 Full-Stack Developer | Aspiring AI & Machine Learning Engineer
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=b4befe&height=200&section=header&text=Welcome%20to%20my%20digital%20garden%20🌙&fontSize=40&animation=fadeIn&fontAlignY=35" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=b4befe&height=200&section=header&text=Ctrl%20%2B%20Z%20Doesn't%20work%20in%20real%20life&fontSize=40&animation=fadeIn&fontAlignY=35" width="100%"/>
 </p>
 
 <div align="center">
