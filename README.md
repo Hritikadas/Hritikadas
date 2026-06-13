@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/main/myimg.jpg" alt="Welcome to Hritika's GitHub" width="100%" style="border-radius: 16px; margin-bottom: 20px;" />
+  <img src="https://raw.githubusercontent.com/Hritikadas/Hritikadas/main/myimg.jpg" alt="Welcome to Hritika's GitHub" width="100%" style="border-radius: 16px; margin-bottom: 20px;" />
 
   <h1>
     <a href="https://git.io/typing-svg">
