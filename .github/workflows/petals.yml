@@ -1,0 +1,90 @@
+name: Generate Sakura Petals Animation
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Generate contribution graph (dark theme)
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: Hritikadas
+          outputs: |
+            dist/contrib-dark.svg?palette=github-dark&color_dots=#ff8fab,#ffb3c6,#ff4d6d,#c9184a,#800f2f
+            dist/contrib-light.svg?color_dots=#ff8fab,#ffb3c6,#ff4d6d,#c9184a,#800f2f
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Overlay sakura petals onto SVG
+        run: |
+          node << 'JSEOF'
+          const fs = require('fs');
+
+          function addPetals(inputFile, outputFile) {
+            let svg = fs.readFileSync(inputFile, 'utf8');
+
+            const petalColors = ['#ffb3c6','#ff8fab','#ffc8dd','#ff4d6d','#ffccd5'];
+            const petalCount = 18;
+            let petals = '';
+            let anims = '';
+
+            for (let i = 0; i < petalCount; i++) {
+              const id = `p${i}`;
+              const color = petalColors[i % petalColors.length];
+              const startX = 20 + Math.floor((i / petalCount) * 820);
+              const startY = -15 - Math.floor(Math.random() * 30);
+              const endX = startX + (Math.random() > 0.5 ? 60 : -60);
+              const endY = 135;
+              const dur = (4 + (i % 5) * 1.2).toFixed(1);
+              const delay = (i * 0.55).toFixed(1);
+              const size = 5 + (i % 3) * 2;
+              const opacity = 0.7 + (i % 3) * 0.1;
+              const rotate = i % 2 === 0 ? '0;360' : '360;0';
+
+              petals += `
+                <g id="${id}" opacity="${opacity}">
+                  <ellipse cx="0" cy="0" rx="${size}" ry="${size * 0.55}" fill="${color}"/>
+                  <ellipse cx="${size * 0.3}" cy="${-size * 0.2}" rx="${size * 0.6}" ry="${size * 0.35}" fill="${color}" opacity="0.7"/>
+                </g>`;
+
+              anims += `
+                <animateMotion href="#${id}" dur="${dur}s" begin="${delay}s" repeatCount="indefinite"
+                  path="M${startX},${startY} Q${(startX+endX)/2 + 40},${(startY+endY)/2} ${endX},${endY}"/>
+                <animateTransform href="#${id}" attributeName="transform" type="rotate"
+                  values="${rotate}" dur="${(parseFloat(dur)*0.6).toFixed(1)}s" begin="${delay}s" repeatCount="indefinite"/>`;
+            }
+
+            svg = svg.replace('</svg>', `
+              <g id="sakura-layer">${petals}${anims}</g>
+            </svg>`);
+
+            fs.writeFileSync(outputFile, svg);
+            console.log(`Written: ${outputFile}`);
+          }
+
+          addPetals('dist/contrib-dark.svg', 'dist/sakura-dark.svg');
+          addPetals('dist/contrib-light.svg', 'dist/sakura-light.svg');
+          JSEOF
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
