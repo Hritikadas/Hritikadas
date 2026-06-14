@@ -1,0 +1,182 @@
+name: Generate Falling Leaves Animation
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Fetch contribution data and generate SVG
+        run: |
+          node - << 'JSEOF'
+          const https = require('https');
+          const fs = require('fs');
+
+          const username = 'Hritikadas';
+          const token = process.env.GITHUB_TOKEN;
+
+          const query = `{
+            user(login: "${username}") {
+              contributionsCollection {
+                contributionCalendar {
+                  totalContributions
+                  weeks {
+                    contributionDays {
+                      contributionCount
+                      date
+                    }
+                  }
+                }
+              }
+            }
+          }`;
+
+          const options = {
+            hostname: 'api.github.com',
+            path: '/graphql',
+            method: 'POST',
+            headers: {
+              'Authorization': `bearer ${token}`,
+              'Content-Type': 'application/json',
+              'User-Agent': 'github-leaves-action'
+            }
+          };
+
+          const req = https.request(options, (res) => {
+            let data = '';
+            res.on('data', chunk => data += chunk);
+            res.on('end', () => {
+              const json = JSON.parse(data);
+              const cal = json.data.user.contributionsCollection.contributionCalendar;
+              const weeks = cal.weeks;
+              const total = cal.totalContributions;
+
+              const CELL = 11, GAP = 3, STEP = CELL + GAP;
+              const COLS = weeks.length;
+              const ROWS = 7;
+              const PAD_LEFT = 10, PAD_TOP = 30;
+              const W = PAD_LEFT * 2 + COLS * STEP;
+              const GRAPH_H = PAD_TOP + ROWS * STEP + 10;
+              const LEAF_AREA = 120;
+              const SVG_H = GRAPH_H + LEAF_AREA + 60;
+
+              const leafColors = ['#c0392b','#e67e22','#d35400','#e74c3c','#922b21','#cb4335','#ba4a00','#935116'];
+              const bgColor = '#0d1117';
+              const emptyColor = '#161b22';
+              const borderColor = '#21262d';
+
+              function contribColor(count) {
+                if (count === 0) return emptyColor;
+                if (count <= 2) return '#ffd6e0';
+                if (count <= 5) return '#ffb3c6';
+                if (count <= 9) return '#ff8fab';
+                return '#ff4d6d';
+              }
+
+              let cells = '';
+              weeks.forEach((week, wi) => {
+                week.contributionDays.forEach((day, di) => {
+                  const x = PAD_LEFT + wi * STEP;
+                  const y = PAD_TOP + di * STEP;
+                  const fill = contribColor(day.contributionCount);
+                  cells += `<rect x="${x}" y="${y}" width="${CELL}" height="${CELL}" rx="2" fill="${fill}" stroke="${borderColor}" stroke-width="0.3"/>`;
+                });
+              });
+
+              const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+              let monthLabels = '';
+              let lastMonth = -1;
+              weeks.forEach((week, wi) => {
+                if (week.contributionDays.length > 0) {
+                  const month = new Date(week.contributionDays[0].date).getMonth();
+                  if (month !== lastMonth) {
+                    lastMonth = month;
+                    const x = PAD_LEFT + wi * STEP;
+                    monthLabels += `<text x="${x}" y="${PAD_TOP - 8}" font-size="9" fill="#8b949e" font-family="monospace">${months[month]}</text>`;
+                  }
+                }
+              });
+
+              function leafPath(id, color, startX, delay, dur, amplitude, size) {
+                const cp1x = startX + amplitude;
+                const cp2x = startX - amplitude;
+                const endX = startX + (amplitude > 0 ? amplitude * 0.3 : amplitude * 0.3);
+                const s = size;
+                const path = `M${startX},-${s*2} Q${cp1x},${Math.round(SVG_H*0.25)} ${cp2x},${Math.round(SVG_H*0.5)} Q${startX},${Math.round(SVG_H*0.75)} ${endX},${SVG_H + 20}`;
+
+                const rotVals = `0;${Math.round(15 + Math.random()*25)};${Math.round(-10 - Math.random()*20)};${Math.round(20)};0`;
+                const rotTimes = '0;0.25;0.5;0.75;1';
+
+                return `
+                  <g id="lf${id}">
+                    <path d="M0,0 C${Math.round(-s*0.8)},${Math.round(-s*0.5)} ${Math.round(-s)},${Math.round(s*0.5)} 0,${Math.round(s*1.2)} C${Math.round(s)},${Math.round(s*0.5)} ${Math.round(s*0.8)},${Math.round(-s*0.5)} 0,0 Z" 
+                          fill="${color}" opacity="0.9"/>
+                    <line x1="0" y1="0" x2="0" y2="${Math.round(s*1.2)}" stroke="${color}" stroke-width="0.8" opacity="0.5"/>
+                    <animateMotion dur="${dur}s" begin="${delay}s" repeatCount="indefinite" path="${path}" rotate="auto"/>
+                    <animateTransform attributeName="transform" type="rotate" 
+                      values="${rotVals}" keyTimes="${rotTimes}"
+                      dur="${dur}s" begin="${delay}s" repeatCount="indefinite" additive="sum"/>
+                  </g>`;
+              }
+
+              let leaves = '';
+              const leafCount = 22;
+              for (let i = 0; i < leafCount; i++) {
+                const color = leafColors[i % leafColors.length];
+                const startX = 15 + Math.round((i / leafCount) * (W - 30));
+                const delay = (i * 0.7).toFixed(1);
+                const dur = (5 + (i % 7) * 1.1).toFixed(1);
+                const amplitude = (i % 2 === 0 ? 1 : -1) * (30 + (i % 4) * 18);
+                const size = 5 + (i % 4) * 2;
+                leaves += leafPath(i, color, startX, delay, dur, amplitude, size);
+              }
+
+              const totalLabel = `<text x="${W/2}" y="${GRAPH_H + LEAF_AREA + 40}" text-anchor="middle" font-size="11" fill="#8b949e" font-family="monospace">${total} contributions in the last year</text>`;
+
+              const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${SVG_H}" viewBox="0 0 ${W} ${SVG_H}">
+                <rect width="${W}" height="${SVG_H}" fill="${bgColor}" rx="8"/>
+                ${monthLabels}
+                ${cells}
+                <g>${leaves}</g>
+                ${totalLabel}
+              </svg>`;
+
+              fs.mkdirSync('dist', { recursive: true });
+              fs.writeFileSync('dist/leaves.svg', svg);
+              console.log(`Generated leaves.svg — ${total} contributions, ${COLS} weeks`);
+            });
+          });
+
+          req.on('error', e => { console.error(e); process.exit(1); });
+          req.write(JSON.stringify({ query }));
+          req.end();
+          JSEOF
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy to output branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: output
+          publish_dir: ./dist
+          force_orphan: true
