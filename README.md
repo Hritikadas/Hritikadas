@@ -65,7 +65,7 @@
 <img src="https://raw.githubusercontent.com/Hritikadas/Hritikadas/output/leaves.svg" alt="falling leaves over contribution graph" width="100%"/>
 </div>
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Hritikadas/Hritikadas/main/profile-3d-contrib/profile-green-animate.svg" alt="Hritika's Activity Overview Graph" width="70%" />
+  <img src="https://raw.githubusercontent.com/Hritikadas/Hritikadas/profile-3d/profile-green-animate.svg" alt="Hritika's Activity Overview Graph" width="70%" />
 </div>
 
 
