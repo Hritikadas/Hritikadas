@@ -4,15 +4,13 @@
 
 <div align="center">
 
-<img src="./myimg.jpg" alt="Welcome to Hritika's GitHub" width="100%" />
+<img src="./myimg.jpg" alt="Welcome to Hritika's GitHub" width="70%" style="border-radius: 12px;" />
 
 <br/>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=2000&pause=800&color=A78BFA&center=true&vCenter=true&multiline=false&width=500&lines=CREATE.;CHANGE.;GROW.;CREATE.+CHANGE.+GROW.)](https://git.io/typing-svg)
 
 <br/>
-
-# Hi, I'm Hritika Das 👋
 
 ![Profile Views](https://komarev.com/ghpvc/?username=Hritikadas&label=Profile+Views&color=a78bfa&style=for-the-badge)
 
@@ -104,7 +102,5 @@
 <img src="https://raw.githubusercontent.com/Hritikadas/Hritikadas/output/leaves.svg" alt="falling leaves over contribution graph" width="100%"/>
 </div>
 
-<div align="center">
-  <i>✨ Thanks for visiting! If you like my work, consider giving a ⭐</i>
-</div>
+
 
