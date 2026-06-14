@@ -95,27 +95,16 @@
 </div>
 
 ---
-
 <!-- ═══════════════════════════════════════════════════════════ -->
-<!--            SECTION 5: SAKURA PETALS ANIMATION              -->
+<!--           SECTION 5: FALLING LEAVES ANIMATION              -->
 <!-- ═══════════════════════════════════════════════════════════ -->
-
 <div align="center">
+🍂 My Contributions
 
-### 🌸 My Contributions in Bloom
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hritikadas/Hritikadas/output/sakura-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Hritikadas/Hritikadas/output/sakura-light.svg" />
-  <img alt="sakura petals falling over contribution graph" src="https://raw.githubusercontent.com/Hritikadas/Hritikadas/output/sakura-dark.svg" />
-</picture>
-
+<img src="https://raw.githubusercontent.com/Hritikadas/Hritikadas/output/leaves.svg" alt="falling leaves over contribution graph" width="100%"/>
 </div>
-
----
 
 <div align="center">
   <i>✨ Thanks for visiting! If you like my work, consider giving a ⭐</i>
 </div>
 
----
