@@ -2,27 +2,81 @@ name: Generate Sakura Petals Animation
 
 on:
   schedule:
-    # Runs automatically every 12 hours
     - cron: "0 */12 * * *"
-  workflow_dispatch: # Allows you to run it manually anytime
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
     steps:
-      - name: Checkout Repository
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Generate Sakura Animation
-        # Standard repository path for the animation engine
-        uses: amandot/github-profile-sakura@main
+      - name: Generate contribution snake SVG (pink theme)
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: Hritikadas
-
-      - name: Deploy Output Files
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
+          outputs: |
+            dist/sakura-dark.svg?palette=github-dark&color_dots=#ffb3c6,#ff8fab,#ff4d6d,#c9184a,#800f2f
+            dist/sakura-light.svg?color_dots=#ffb3c6,#ff8fab,#ff4d6d,#c9184a,#800f2f
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Add sakura petals overlay via Node
+        run: |
+          node - << 'JSEOF'
+          const fs = require('fs');
+
+          const petalColors = ['#ffb3c6','#ff8fab','#ffc8dd','#ff4d6d','#ffccd5'];
+
+          function addPetals(inputFile, outputFile) {
+            if (!fs.existsSync(inputFile)) {
+              console.log('File not found: ' + inputFile);
+              return;
+            }
+            let svg = fs.readFileSync(inputFile, 'utf8');
+            let petals = '';
+            const count = 16;
+            for (let i = 0; i < count; i++) {
+              const color = petalColors[i % petalColors.length];
+              const sx = 30 + Math.round((i / count) * 800);
+              const sy = -20 - (i % 4) * 8;
+              const ex = sx + (i % 2 === 0 ? 50 : -50);
+              const ey = 130;
+              const mx = (sx + ex) / 2 + (i % 2 === 0 ? 35 : -35);
+              const my = 65;
+              const dur = (3.5 + (i % 6) * 0.9).toFixed(1);
+              const delay = (i * 0.5).toFixed(1);
+              const sz = 5 + (i % 3) * 2;
+              const id = 'pk' + i;
+              petals += `<g id="${id}">` +
+                `<ellipse cx="0" cy="0" rx="${sz}" ry="${Math.round(sz*0.5)}" fill="${color}" opacity="0.85"/>` +
+                `<ellipse cx="${Math.round(sz*0.3)}" cy="${-Math.round(sz*0.2)}" rx="${Math.round(sz*0.55)}" ry="${Math.round(sz*0.3)}" fill="${color}" opacity="0.6"/>` +
+                `<animateMotion dur="${dur}s" begin="${delay}s" repeatCount="indefinite" path="M${sx},${sy} Q${mx},${my} ${ex},${ey}"/>` +
+                `<animateTransform attributeName="transform" type="rotate" values="0;360" dur="${(parseFloat(dur)*0.7).toFixed(1)}s" begin="${delay}s" repeatCount="indefinite"/>` +
+                `</g>`;
+            }
+            svg = svg.replace('</svg>', `<g>${petals}</g></svg>`);
+            fs.writeFileSync(outputFile, svg);
+            console.log('Done: ' + outputFile);
+          }
+
+          addPetals('dist/sakura-dark.svg', 'dist/sakura-dark.svg');
+          addPetals('dist/sakura-light.svg', 'dist/sakura-light.svg');
+          JSEOF
+
+      - name: Deploy to output branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: output
+          publish_dir: ./dist
+          force_orphan: true
