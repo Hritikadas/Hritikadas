@@ -55,17 +55,6 @@
 
 </div>
 
----
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!--           SECTION 5: FALLING LEAVES ANIMATION              -->
-<!-- ═══════════════════════════════════════════════════════════ -->
-<div align="center">
-🍂 My Contributions
 
-<img src="https://raw.githubusercontent.com/Hritikadas/Hritikadas/output/leaves.svg" alt="falling leaves over contribution graph" width="100%"/>
-</div>
-<div align="center">
-  <img src="https://raw.githubusercontent.com/Hritikadas/Hritikadas/profile-3d/profile-green-animate.svg" alt="Hritika's Activity Overview Graph" width="70%" />
-</div>
 
 
