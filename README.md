@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<img src="./myimg.jpg" alt="Welcome to Hritika's GitHub" width="100%" style="max-height: 220px; object-fit: cover; border-radius: 12px;" />
+<img src="./myimg.jpg" alt="Welcome to Hritika's GitHub" width="100%" style="max-height: 180px; object-fit: cover; border-radius: 12px;" />
 
 <br/>
 
