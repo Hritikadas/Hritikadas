@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<img src="./myimg.jpg" alt="Welcome to Hritika's GitHub" width="70%" style="border-radius: 12px;" />
+<img src="./myimg.jpg" alt="Welcome to Hritika's GitHub" width="100%" style="border-radius: 12px;" />
 
 <br/>
 
